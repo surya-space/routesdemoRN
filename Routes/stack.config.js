@@ -7,12 +7,47 @@ import Screen3 from '../Screens/screen3'
 
 const Stack = createStackNavigator();
 
-const StackContainer = () => {
- return   <Stack.Navigator initialRouteName="Screen1">
-                <Stack.Screen name="Screen1" component={Screen1} />
-                <Stack.Screen name="Screen2" component={Screen2} />
-                <Stack.Screen name="Screen3" component={Screen3} />
+export const StackContainer1 = () => {
+ return   <Stack.Navigator>
+                <Stack.Screen name="Screen1" component={Screen1}    options={{
+          title: 'My home',
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}/>
           </Stack.Navigator>
 }
 
-export default StackContainer
+export const StackContainer2 = () => {
+      return   <Stack.Navigator>
+                     <Stack.Screen name="Screen2" component={Screen2}    options={{
+               title: 'My home',
+               headerStyle: {
+                 backgroundColor: '#f4511e',
+               },
+               headerTintColor: '#fff',
+               headerTitleStyle: {
+                 fontWeight: 'bold',
+               },
+             }}/>
+               </Stack.Navigator>
+     }
+
+     export const StackContainer3 = () => {
+      return   <Stack.Navigator>
+                     <Stack.Screen name="Screen3" component={Screen3}    options={{
+               title: 'My home',
+               headerStyle: {
+                 backgroundColor: '#f4511e',
+               },
+               headerTintColor: '#fff',
+               headerTitleStyle: {
+                 fontWeight: 'bold',
+               },
+             }}/>
+               </Stack.Navigator>
+     }
