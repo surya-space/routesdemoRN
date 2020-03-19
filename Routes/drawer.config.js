@@ -9,7 +9,7 @@ import TabContainer from './tab.config'
 const Drawer = createDrawerNavigator();
 
 const DrawerContainer = () => {
-    return  <Drawer.Navigator initialRouteName="Home">
+    return  <Drawer.Navigator initialRouteName="Screen1">
                 <Drawer.Screen name="Home" component={TabContainer} />
             </Drawer.Navigator>
 }
